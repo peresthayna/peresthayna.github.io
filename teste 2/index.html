@@ -4,17 +4,21 @@
 
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Teste 2</title>
+      <title>Desafio 2</title>
 
   </head>
 
   <body>
 
+    <a href="/index.html"><button>Voltar</button></a>
     <h1>Faça parte</h1><hr>
 
+    <!-- api static forms utilizada para enviar emails -->
     <form action="https://api.staticforms.xyz/submit" method="POST">
 
-      <input type="hidden" name="accessKey" value="49ed7480-77dc-48e0-9cb9-6a1208c8cbde">
+      <!-- informar o email em que deseja receber o formulário para receber uma chave de acesso -->
+      <label for="accessKey">Chave de acesso <a href="https://www.staticforms.xyz/">Static Forms</a>: </label>
+      <input type="text" name="accessKey" value="49ed7480-77dc-48e0-9cb9-6a1208c8cbde">
       <input type="hidden" name="subject" value="Contato Fomenta Vale"/>
       <p><label for="nome">Nome completo: </label>
       <input type="text" id="name" name="$nome" required></p>
